@@ -1,0 +1,64 @@
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grey-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--dark-blue);
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+.container {
+  background-color: var(--dark-grey-blue);
+  width: 33rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: var(--light-cyan);
+  text-align: center;
+  position: relative;
+}
+.container > * + * {
+  margin-top: 1.5rem;
+}
+.slip-number {
+  color: var(--neon-green);
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+}
+.advice-text {
+  font-size: 1.75rem;
+  /* padding-bottom: 1.5rem; */
+}
+.divider {
+  margin: 2rem auto;
+}
+.dice {
+  background-color: var(--neon-green);
+  padding: 1rem;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  left: 45%;
+  bottom: -1.5rem;
+  transition: all 200ms ease-in-out;
+}
+.dice:hover {
+  cursor: pointer;
+  box-shadow: 0 0 40px var(--neon-green);
+}
+
+footer {
+  color: var(--dark-grey-blue);
+  margin-top: 5rem;
+}
+footer a {
+  color: var(--grayish-blue);
+  transition: color 200ms ease-in-out;
+}
+footer a:hover {
+  color: var(--neon-green);
+}
